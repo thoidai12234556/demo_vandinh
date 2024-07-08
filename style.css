@@ -1,0 +1,92 @@
+body{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-image: url(https://scr.vn/wp-content/uploads/2020/07/Tr%C3%A1i-tim-ph%C3%A1t-s%C3%A1ng.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+marquee{
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 25px;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.main{
+    width: 20%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 40%;
+    border: 5px solid;
+    margin-right:40% ;
+    text-align: center;
+    padding: 20px;
+    border-color: pink;
+    border-radius: 20px;
+    color: whitesmoke;
+}
+.main img{
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+.decor{
+    width: 100%;
+    height: auto;
+
+}
+.decor .right img{
+    position: absolute;
+    right:50px;
+    animation: animation 3s infinite linear;
+}
+.decor .left img{
+    position: absolute;
+    left:50px;
+    animation: animation 3s infinite linear;
+}
+ .decor .top img{
+    position: absolute;
+    left: 50px;
+    bottom:50px;
+    animation: animation 3s infinite linear;
+}
+
+.decor .bottom img{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    animation: animation 3s infinite linear;
+}
+
+@keyframes animation{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+
+}
+a{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    text-decoration: none;
+}
+button{
+    border-radius: 20px;
+    border-color: black;
+   
+}

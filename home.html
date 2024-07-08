@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class ="home">
+        <div class="content" >
+            <h2>Xin chào bạn yêu của tôi nhá <3</h2>
+        </div>
+        <div class="main">
+            <div class="right ">
+                <p> </p>
+            </div>
+          <div class="menu">
+            <a href="demo.html">
+            <img  width="120px" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/447689650_1174008150301501_4862953890107277381_n.jpg?stp=dst-jpg_s280x280&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=id_P5gKLJCAQ7kNvgHmcKG0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGh3Q7KBmwb-DWEwQkGg8vaYVYRR_Y1HhdkbNSfYJNXBQ&oe=6693E9F9">
+           </a>
+            <form >
+            <table>
+                <p>Một số thông tin cơ bản</p>
+            <tr> 
+                <td>Tên</td>
+                <td>:Princess</td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>:17/07/2005</td>
+        </tr>
+        <tr><td>Mô tả</td><td>:Làm ngta Yêu điên cuồng</td></tr>
+        </table>
+        </form>
+        </div><div class="menu">
+            <a href="demo2.html">
+            <img  width="150px" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/448133003_778861721107623_1529406247266236172_n.jpg?stp=dst-jpg_s403x403&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=bZlLqYCdXUYQ7kNvgFvOgrg&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QFCUUW4f86_y9ktp9MyFijzjr7nvMYANg71x6ZkaiGwEA&oe=66940085">
+           </a>
+            <form >
+            <table>
+                <p>Một số thông tin cơ bản</p>
+            <tr> 
+                <td>Tên</td>
+                <td>: Công chúa</td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>:17/07/2005</td>
+        </tr>
+        <tr><td>Mô tả</td><td>:Vừa gặp đã mến</td></tr>
+        </table>
+        </form>
+    
+        </div><div class="menu">
+            <a href="demo3.html">
+            <img  width="150px" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/448502619_1119703282435803_7055468478484016130_n.jpg?stp=dst-jpg_p320x320&_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=nIH1y5s2W7MQ7kNvgEQWL7P&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHJzRjdc264EoZkN87KjQABbCme46b8a8i4fhP-BOAoBQ&oe=66A3EB29">
+           </a>
+            <form >
+            <table>
+                <p>Một số thông tin cơ bản</p>
+            <tr> 
+                <td>Tên</td>
+                <td>:Ngy VănDinh</td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>:17/07/2005</td>
+        </tr>
+        <tr><td>Mô tả</td><td>:Dethuong chịu hong nổi</td></tr>
+        </table>
+        </form>
+        </div>
+        <div class="left">
+            <p>  </p>
+        </div>
+    </div>
+    <div class="name"><marquee><h2>Đây chính là món quà mà anh đã chuẩn bị cho bé</h2></marquee>
+    <video id="myVideo" width="100%" height="200px" loop autoplay controls muted >
+        <source src="/video/h1.mp4" type="video/mp4">
+        <source src="/video/h1.ogg" type="video/ogg">  
+    </video>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const video = document.getElementById('myVideo');
+            video.muted = true; // Bắt đầu với video bị tắt tiếng
+            video.play(); // Tự động phát video
+            
+            // Sử dụng promise để kiểm tra khi video bắt đầu phát thành công
+            video.play().then(() => {
+                setTimeout(() => {
+                    video.muted = false; // Bật âm thanh sau khi video bắt đầu phát
+                }, 1000); // Thời gian chờ 1 giây để đảm bảo video đã bắt đầu
+            }).catch((error) => {
+                console.log('Video playback failed:', error);
+            });
+        });
+    </script></div>
+</body>
+</html>
